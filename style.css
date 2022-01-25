@@ -6,6 +6,7 @@ body{
 
 nav{
     background-color: white;
+    user-select: none;
 }
 
 .logo{
@@ -13,6 +14,8 @@ nav{
     font-size: 40px;
     font-family: 'Akronim';
     color: #8e44ad;
+    cursor: pointer;
+    display: inline;
 }
 
 .logo>span{
@@ -45,7 +48,11 @@ nav{
     margin: auto 8px;
     font-weight: bold;
     font-size: 15px;
-    
+    cursor: pointer;
+}
+.child>a{
+    color: black;
+    text-decoration: none;
 }
 
 .c1{
@@ -54,6 +61,22 @@ nav{
 
 .c3{
     background-color: black;
-    color: white;
     border-radius: 30px;
+    padding-left: 8px;
+}
+.c3>a{
+    color: white;
+}
+
+.c3>a>i.fa-chevron-down{
+    /* font-weight: 400; */
+    margin: 0 0 0 10px;
+}
+
+.c3>a>i.fa-phone-alt{
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    margin-right: 10px;
 }
